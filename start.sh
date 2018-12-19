@@ -32,6 +32,7 @@ run_program ()
 run_program locker/locker.js pids/locker.pid logs/locker.log
 run_program messagebroker/messagebroker.js pids/messagebroker.pid logs/messagebroker.log
 run_program bcmonitor/bcmonitor.js pids/bcmonitor.pid logs/bcmonitor.log
+run_program bcmonitor/bcmonitorEth.js pids/bcmonitorEth.pid logs/bcmonitorEth.log
 run_program emailservice/emailservice.js pids/emailservice.pid logs/emailservice.log
 run_program pushnotificationsservice/pushnotificationsservice.js pids/pushnotificationsservice.pid logs/pushnotificationsservice.log
 run_program fiatrateservice/fiatrateservice.js pids/fiatrateservice.pid logs/fiatrateservice.log
