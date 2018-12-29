@@ -69,6 +69,12 @@ var config = {
               url: ' ',
           }
      },
+      tri: {
+          livenet: {
+              provider: 'triRpc',
+              url: ' ',
+          }
+      },
   },
   pushNotificationsOpts: {
     templatePath: './lib/templates',
@@ -112,6 +118,9 @@ var config = {
   // mailer: sgMail,
   eth: {
         EtherScanApiKey:'YourApiKeyToken'
-    }
+  },
+  tri: {
+        url:'http://192.168.1.175:8545'
+  }
 };
 module.exports = config;

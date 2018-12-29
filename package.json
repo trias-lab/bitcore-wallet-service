@@ -25,6 +25,7 @@
     "bitcore-lib": "git+https://git@github.com/trias-lab/bitcore-lib.git#fix-ec",
     "bitcore-lib-cash": "git+https://git@github.com/bitpay/bitcore-lib-cash",
     "bitcore-lib-eth": "git+https://git@github.com/trias-lab/bitcore-lib.git#add-eth-bws",
+    "bitcore-lib-tri": "git+https://git@github.com/trias-lab/bitcore-lib.git#add-tri-bws",
     "body-parser": "^1.11.0",
     "compression": "^1.6.2",
     "email-validator": "^1.0.1",
@@ -49,7 +50,8 @@
     "socket.io": "^2.2.0",
     "socket.io-client": "^2.2.0",
     "sticky-session": "^0.1.0",
-    "uuid": "^3.3.2"
+    "uuid": "^3.3.2",
+    "web3": "^1.0.0-beta.37"
   },
   "devDependencies": {
     "chai": "^1.9.1",
