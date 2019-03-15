@@ -1,12 +1,21 @@
 
 # bitcore-wallet-service
 
+[![Latest Tag](https://img.shields.io/badge/tag-v2.6.0-orange.svg)](https://github.com/trias-lab/bitcore-wallet-service/tree/v2.6.0)
 [![NPM Package](https://img.shields.io/npm/v/bitcore-wallet-service.svg?style=flat-square)](https://www.npmjs.org/package/bitcore-wallet-service)
 [![Build Status](https://img.shields.io/travis/bitpay/bitcore-wallet-service.svg?branch=master&style=flat-square)](https://travis-ci.org/bitpay/bitcore-wallet-service)
 [![Coverage Status](https://coveralls.io/repos/bitpay/bitcore-wallet-service/badge.svg?branch=master)](https://coveralls.io/r/bitpay/bitcore-wallet-service?branch=master)
+[![Node version](https://img.shields.io/badge/node-v8.15.0-blue.svg)](https://nodejs.org)
+[![Lincese](https://img.shields.io/badge/Lincese-GPL3.0-green.svg)](http://www.gnu.org/licenses/gpl-3.0.html) 
 
-A Multisig HD Bitcore Wallet Service.
+<br/>
+A Multisig HD Bitcore Wallet Service. add-eth branch add ethereum transaction support.
+<br/>
 
+Branch    | Tests | Coverage
+----------|-------|----------
+master    | ![CircleCI](https://img.shields.io/badge/circleci-passing-success.svg) | ![CircleCI](https://img.shields.io/badge/codecov-65%25-red.svg)
+add-eth    | ![CircleCI](https://img.shields.io/badge/circleci-passing-success.svg) | ![CircleCI](https://img.shields.io/badge/codecov-67%25-red.svg)
 # Description
 
 Bitcore Wallet Service facilitates multisig HD wallets creation and operation through a (hopefully) simple and intuitive REST API.
@@ -19,7 +28,14 @@ BWS is been used in production enviroments for [Copay Wallet](https://copay.io),
 
 More about BWS at https://blog.bitpay.com/announcing-the-bitcore-wallet-suite/
 
-# Getting Started
+# Requirements
+
+| Requirement | Notes           |
+| ----------- | --------------- |
+| Node          | v8.15.0 or highter |
+| mongodb      | v3.0.15 or highter            |
+
+# Install 
 ```
  git clone https://github.com/bitpay/bitcore-wallet-service.git
  cd bitcore-wallet-service
@@ -35,6 +51,16 @@ BWS needs mongoDB. You can configure the connection at `config.js`
 BWS supports SSL and Clustering. For a detailed guide on installing BWS with extra features see [Installing BWS](https://github.com/bitpay/bitcore-wallet-service/blob/master/installation.md). 
 
 BWS uses by default a Request Rate Limitation to CreateWallet endpoint. If you need to modify it, check defaults.js' `Defaults.RateLimit`
+
+# Quick Start
+Here is some normal configuration keys that must be changed before start the project.
+Configuration file is  config.js.
+
+| Key | Content           |
+| ----------- | --------------- |
+| storageOpts.mongoDb.uri          | mongodb server url, if default install, can be left unchanged |
+| eth.EtherScanApiKey      | api key of etherscan, please visit https://etherscan.io/apis to apply            |
+| tri.url      | tri v1 public node rpc url           |
 
 # Using BWS with PM2
 
