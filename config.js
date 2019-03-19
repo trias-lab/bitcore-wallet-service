@@ -62,8 +62,19 @@ var config = {
         url: 'https://test-bch-insight.bitpay.com:443',
         addressFormat: 'cashaddr',  // copay, cashaddr, or legacy
       },
-
     },
+     eth: {
+          livenet: {
+              provider: 'etherScan',
+              url: ' ',
+          }
+     },
+      tri: {
+          livenet: {
+              provider: 'triRpc',
+              url: ' ',
+          }
+      },
   },
   pushNotificationsOpts: {
     templatePath: './lib/templates',
@@ -105,5 +116,11 @@ var config = {
   //
   // //then add:
   // mailer: sgMail,
+  eth: {
+        EtherScanApiKey:'YourApiKeyToken'
+  },
+  tri: {
+        url:'http://192.168.1.175:8545'
+  }
 };
 module.exports = config;

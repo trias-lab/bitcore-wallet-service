@@ -320,6 +320,9 @@ helpers.stubUtxos = function(server, wallet, amounts, opts, cb) {
             break;
         }
         should.exist(scriptPubKey);
+        if (!scriptPubKey) { //for code check
+            scriptPubKey = S.buildPublicKeyHashOut(address.address);
+        }
 
         return {
           txid: helpers.randomTXID(),
