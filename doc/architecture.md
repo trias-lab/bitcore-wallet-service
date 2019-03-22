@@ -90,6 +90,6 @@ fiatrateservice进程的逻辑比较简单，每小时从bitpay的服务器，�
 
 ### bws进程介绍
 
-bws进程是项目的主要进程，使用express框架，对外提供http api服务。具体的api接口可以参考文档 bws api接口文档
+bws进程是项目的主要进程，使用express框架，对外提供http api服务。具体的api接口可以参考文档 [bws api接口文档](https://dasenlincode.github.io/bws_api_doc) 。
 
 
