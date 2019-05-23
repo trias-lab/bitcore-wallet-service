@@ -1,5 +1,5 @@
 
-# bitcore-wallet-service
+# BWS
 
 [![Latest Tag](https://img.shields.io/badge/tag-v2.6.0-orange.svg)](https://github.com/trias-lab/bitcore-wallet-service/tree/v2.6.0)
 [![NPM Package](https://img.shields.io/npm/v/bitcore-wallet-service.svg?style=flat-square)](https://www.npmjs.org/package/bitcore-wallet-service)
@@ -9,7 +9,7 @@
 [![Lincese](https://img.shields.io/badge/Lincese-GPL3.0-green.svg)](http://www.gnu.org/licenses/gpl-3.0.html) 
 
 <br/>
-A Multisig HD Bitcore Wallet Service. add-eth branch add ethereum transaction support.
+A  HD Wallet Backend Service. Support Btc, Bch, Eth, TRY testnet(including both normal and private transactions). 
 <br/>
 
 Branch    | Tests | Coverage
@@ -19,15 +19,11 @@ add-eth    | ![CircleCI](https://img.shields.io/badge/circleci-passing-success.s
 
 # Description
 
-Bitcore Wallet Service facilitates multisig HD wallets creation and operation through a (hopefully) simple and intuitive REST API.
+BWS facilitates  HD wallets creation and operation through a (hopefully) simple and intuitive REST API.
 
-BWS can usually be installed within minutes and accommodates all the needed infrastructure for peers in a multisig wallet to communicate and operate – with minimum server trust.
+BWS can usually be installed within minutes and accommodates all the needed infrastructure for peers in a wallet to communicate and operate – with minimum server trust.
 
-See [Bitcore-wallet-client](https://github.com/trias-lab/bitcore-wallet-client) for the *official* client library that communicates to BWS and verifies its response. Also check [Bitcore-wallet](https://github.com/bitpay/bitcore-wallet) for a simple CLI wallet implementation that relies on BWS.
-
-BWS is been used in production enviroments for [Copay Wallet](https://copay.io), [Bitpay App wallet](https://bitpay.com/wallet) and others.  
-
-More about BWS at https://blog.bitpay.com/announcing-the-bitcore-wallet-suite/
+See [BWC](https://github.com/trias-lab/bitcore-wallet-client) for the *official* client library that communicates to BWS and verifies its response.
 
 # Requirements
 
