@@ -71,7 +71,7 @@ var config = {
      },
       tri: {
           livenet: {
-              provider: 'triRpc',
+              provider: 'erc20',
               url: ' ',
           }
       },
@@ -117,7 +117,7 @@ var config = {
   // //then add:
   // mailer: sgMail,
   eth: {
-        EtherScanApiKey:'YourApiKeyToken'
+        EtherScanApiKey:'Y5BJ5VA3XZ59F63XQCQDDUWU2C29144MMM'
   },
   tri: {
         url:'http://192.168.1.175:8545'
