@@ -69,7 +69,7 @@ var config = {
               url: ' ',
           }
      },
-      tri: {
+      try: {
           livenet: {
               provider: 'erc20',
               url: ' ',
@@ -119,7 +119,7 @@ var config = {
   eth: {
         EtherScanApiKey:'Y5BJ5VA3XZ59F63XQCQDDUWU2C29144MMM'
   },
-  tri: {
+  try: {
         url:'http://192.168.1.175:8545'
   }
 };
