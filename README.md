@@ -58,7 +58,7 @@ Configuration file is  config.js.
 | ----------- | --------------- |
 | storageOpts.mongoDb.uri          | mongodb server url, if default install, can be left unchanged |
 | eth.EtherScanApiKey      | api key of etherscan, please visit https://etherscan.io/apis to apply            |
-| tri.url      | tri v1 public node rpc url           |
+| try.url      | try v1 public node rpc url           |
 
 # Documentation
 
