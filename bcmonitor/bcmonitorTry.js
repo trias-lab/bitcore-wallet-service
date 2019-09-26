@@ -9,8 +9,8 @@ log.debug = log.verbose;
 var config = require('../config');
 var BlockchainMonitor = require('../lib/blockchainmonitorTry');
 
-if (_.isEmpty(config.eth) || _.isEmpty(config.eth.EtherScanApiKey)) {
-  console.log('not find ether scan api key');
+if (!config.infura.projectId.length) {
+  console.log('not find infura project id, please fill config.infura.projectId');
   return;
 }
 var bcm = new BlockchainMonitor();

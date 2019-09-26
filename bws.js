@@ -5,12 +5,19 @@ var fs = require('fs');
 
 var ExpressApp = require('./lib/expressapp');
 var config = require('./config');
+const process = require('process');
+
 var log = require('npmlog');
 log.debug = log.verbose;
 log.disableColor();
 
 
 
+process.on('unhandledRejection', (reason, p) => {
+  log.error('Unhandled Rejection at: Promise', p, 'reason:', reason);
+  log.error('stack', reason.stack)
+  // application specific logging, throwing an error, or other logic here
+});
 
 var port = process.env.BWS_PORT || config.port || 3232;
 

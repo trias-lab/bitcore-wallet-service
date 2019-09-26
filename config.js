@@ -117,10 +117,14 @@ var config = {
   // //then add:
   // mailer: sgMail,
   eth: {
-        EtherScanApiKey:'Y5BJ5VA3XZ59F63XQCQDDUWU2C29144MMM'
+        EtherScanApiKey:''
   },
   try: {
         url:'http://192.168.1.175:8545'
+  },
+  infura: {
+    projectId:[
+    ]
   }
 };
 module.exports = config;
