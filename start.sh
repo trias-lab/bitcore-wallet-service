@@ -41,7 +41,7 @@ run_program locker/locker.js pids/locker.pid logs/locker.log
 run_program messagebroker/messagebroker.js pids/messagebroker.pid logs/messagebroker.log
 run_program bcmonitor/bcmonitor.js pids/bcmonitor.pid logs/bcmonitor.log
 run_program bcmonitor/bcmonitorEth.js pids/bcmonitorEth.pid logs/bcmonitorEth.log
-#run_program bcmonitor/bcmonitorTri.js pids/bcmonitorTri.pid logs/bcmonitorTri.log
+run_program bcmonitor/bcmonitorTry.js pids/bcmonitorTry.pid logs/bcmonitorTry.log
 run_program emailservice/emailservice.js pids/emailservice.pid logs/emailservice.log
 run_program pushnotificationsservice/pushnotificationsservice.js pids/pushnotificationsservice.pid logs/pushnotificationsservice.log
 run_program fiatrateservice/fiatrateservice.js pids/fiatrateservice.pid logs/fiatrateservice.log
