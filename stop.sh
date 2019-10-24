@@ -13,7 +13,7 @@ stop_program ()
 stop_program pids/bws.pid
 stop_program pids/fiatrateservice.pid
 stop_program pids/emailservice.pid
-stop_program pids/bcmonitor.pid
+stop_program pids/bcmonitorBtc.pid
 stop_program pids/bcmonitorEth.pid
 stop_program pids/bcmonitorTry.pid
 stop_program pids/pushnotificationsservice.pid

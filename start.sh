@@ -39,7 +39,7 @@ run_program ()
 
 run_program locker/locker.js pids/locker.pid logs/locker.log
 run_program messagebroker/messagebroker.js pids/messagebroker.pid logs/messagebroker.log
-run_program bcmonitor/bcmonitor.js pids/bcmonitor.pid logs/bcmonitor.log
+run_program bcmonitor/bcmonitorBtc.js pids/bcmonitorBtc.pid logs/bcmonitorBtc.log
 run_program bcmonitor/bcmonitorEth.js pids/bcmonitorEth.pid logs/bcmonitorEth.log
 run_program bcmonitor/bcmonitorTry.js pids/bcmonitorTry.pid logs/bcmonitorTry.log
 run_program emailservice/emailservice.js pids/emailservice.pid logs/emailservice.log
